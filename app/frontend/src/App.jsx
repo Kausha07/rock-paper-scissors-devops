@@ -75,11 +75,16 @@ function App() {
   return (
     <Container maxWidth="md" sx={{ py: 4 }}>
       <Typography variant="h2" component="h1" align="center" gutterBottom>
-        🎮 Rock Paper Scissors
+        🎮 Rock Paper Scissors DevOps
       </Typography>
       
+      <Box sx={{ display: 'flex', justifyContent: 'center', mb: 2 }}>
+        <Chip label="🚀 CI/CD Pipeline Active" color="success" variant="outlined" />
+        <Chip label="📊 Real-time Monitoring" color="primary" variant="outlined" sx={{ ml: 1 }} />
+      </Box>
+      
       <Typography variant="h6" align="center" color="text.secondary" gutterBottom>
-        Choose your weapon and battle the computer!
+        Enterprise DevOps Game with Docker, Jenkins & Grafana!
       </Typography>
 
       {/* Game Stats */}
@@ -209,6 +214,47 @@ function App() {
             • Paper beats Rock<br/>
             • Same choice = Tie
           </Typography>
+        </CardContent>
+      </Card>
+
+      {/* DevOps Tools */}
+      <Card sx={{ mt: 4, bgcolor: 'primary.main', color: 'white' }}>
+        <CardContent>
+          <Typography variant="h6" gutterBottom>
+            🔧 DevOps Monitoring Dashboard
+          </Typography>
+          <Grid container spacing={2}>
+            <Grid item xs={12} sm={4}>
+              <Button 
+                variant="outlined" 
+                fullWidth 
+                sx={{ color: 'white', borderColor: 'white' }}
+                onClick={() => window.open('http://localhost:3001', '_blank')}
+              >
+                📊 Grafana Dashboard
+              </Button>
+            </Grid>
+            <Grid item xs={12} sm={4}>
+              <Button 
+                variant="outlined" 
+                fullWidth 
+                sx={{ color: 'white', borderColor: 'white' }}
+                onClick={() => window.open('http://localhost:9090', '_blank')}
+              >
+                📈 Prometheus Metrics
+              </Button>
+            </Grid>
+            <Grid item xs={12} sm={4}>
+              <Button 
+                variant="outlined" 
+                fullWidth 
+                sx={{ color: 'white', borderColor: 'white' }}
+                onClick={() => window.open('http://localhost:8081', '_blank')}
+              >
+                🔧 Jenkins CI/CD
+              </Button>
+            </Grid>
+          </Grid>
         </CardContent>
       </Card>
     </Container>
