@@ -68,3 +68,5 @@ React App (3000) → Node.js API (8000) → PostgreSQL (5432)
 - **Cloud Deployment**: ~$20-50/month
 
 **Happy DevOps! 🎮**
+
+<!-- Test change for Jenkins automation -->
