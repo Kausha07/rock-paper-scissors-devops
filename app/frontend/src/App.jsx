@@ -79,12 +79,16 @@ function App() {
       </Typography>
       
       <Box sx={{ display: 'flex', justifyContent: 'center', mb: 2 }}>
-        <Chip label="🚀 CI/CD Pipeline Active" color="success" variant="outlined" />
+        <Chip label="🚀 CI/CD Pipeline Active v3.0 - Auto Deploy" color="success" variant="outlined" />
         <Chip label="📊 Real-time Monitoring" color="primary" variant="outlined" sx={{ ml: 1 }} />
       </Box>
       
       <Typography variant="h6" align="center" color="text.secondary" gutterBottom>
         Enterprise DevOps Game with Docker, Jenkins & Grafana!
+      </Typography>
+      
+      <Typography variant="body2" align="center" color="success.main" gutterBottom>
+        🔄 Last Updated: {new Date().toLocaleString()} - Auto-Deploy Active!
       </Typography>
 
       {/* Game Stats */}
