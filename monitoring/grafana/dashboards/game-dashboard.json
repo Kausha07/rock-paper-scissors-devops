@@ -1,0 +1,36 @@
+{
+  "dashboard": {
+    "id": null,
+    "title": "Rock Paper Scissors Game Dashboard",
+    "tags": ["game", "rps"],
+    "timezone": "browser",
+    "panels": [
+      {
+        "id": 1,
+        "title": "Games Played",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "sum(rps_games_played_total)",
+            "refId": "A"
+          }
+        ],
+        "gridPos": {"h": 8, "w": 12, "x": 0, "y": 0}
+      },
+      {
+        "id": 2,
+        "title": "Game Results",
+        "type": "piechart",
+        "targets": [
+          {
+            "expr": "rps_games_played_total",
+            "refId": "A"
+          }
+        ],
+        "gridPos": {"h": 8, "w": 12, "x": 12, "y": 0}
+      }
+    ],
+    "time": {"from": "now-1h", "to": "now"},
+    "refresh": "5s"
+  }
+}
